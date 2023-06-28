@@ -2,7 +2,7 @@ name: CI feature branch
 
 on:
   push:
-    branches: [ "main", "development", "feature/*" ]
+    branches: [ "feature/*" ]
 
 jobs:
   build:
