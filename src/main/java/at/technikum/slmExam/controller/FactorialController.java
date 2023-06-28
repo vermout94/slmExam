@@ -15,4 +15,9 @@ public class FactorialController {
     public long getFactorial(@RequestParam("number") int number) {
         return factorialService.calculateFactorial(number);
     }
+
+    @GetMapping("/total")
+    public long getTotalFactorialSum() {
+        return factorialService.getTotalFactorialSum();
+    }
 }
